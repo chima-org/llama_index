@@ -252,6 +252,10 @@ class ContextChatEngine(BaseChatEngine):
             ],
             source_nodes=nodes,
         )
+        
+    async def get_augmented_prompt(self, message: str):
+        context_str_template, nodes = await self._agenerate_context(message)
+        return self._get_prefix_messages_with_context(context_str_template)
 
     @trace_method("chat")
     async def astream_chat(
