@@ -20,7 +20,7 @@ from llama_index.download.utils import (
     rewrite_exports,
 )
 
-LLAMA_HUB_CONTENTS_URL = f"https://raw.githubusercontent.com/run-llama/llama-hub/main"
+LLAMA_HUB_CONTENTS_URL = f"https://raw.githubusercontent.com/chima-org/llama-hub/chima"
 LLAMA_HUB_PATH = "/llama_hub"
 LLAMA_HUB_URL = LLAMA_HUB_CONTENTS_URL + LLAMA_HUB_PATH
 
